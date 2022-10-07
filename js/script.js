@@ -36,3 +36,33 @@ function TinhTien(){
 }
 
 document.getElementById("tinhTien").onclick = TinhTien;
+
+
+// BAI TAP 4
+
+function TinhChuViDienTich(){
+    var chieuDai = document.getElementById("chieuDai").value;
+    var chieuRong = document.getElementById("chieuRong").value;
+
+    var chuVi = (Number(chieuDai) + Number(chieuRong))*2;
+    var dienTich = chieuDai * chieuRong;
+
+    document.getElementById("kqChuViDienTich").innerHTML = "<p>Chu Vi: " + chuVi + "</p><p>Dien Tich: " + dienTich + "</p>";
+
+}
+
+document.getElementById("tinhDienTichChuVi").onclick = TinhChuViDienTich;
+
+
+// BAI TAP 5
+
+function TinhTongKySo(){
+    var so = document.getElementById("soCoHaiChuSo").value;
+    var hangChuc = Math.floor(so/10); 
+    var hangDonVi = so % 10;
+    var tong = hangChuc + hangDonVi;
+
+    document.getElementById("kqTongKySo").innerHTML = "Tổng 2 Ký Số: " + tong;
+}
+
+document.getElementById("tinhTongKySo").onclick = TinhTongKySo;
