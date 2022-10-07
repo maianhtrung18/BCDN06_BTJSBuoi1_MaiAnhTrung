@@ -21,7 +21,7 @@ function TinhTienLuong(){
     var tienLuong = soNgayLam * 100000;
     
 
-    document.getElementById("kqTienLuong").innerHTML = "Tien Luong la: " + tienLuong.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    document.getElementById("kqTienLuong").innerHTML = "Tiền lương là: " + tienLuong.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
 document.getElementById("tinhTienLuong").onclick = TinhTienLuong;
@@ -54,7 +54,7 @@ function TinhTrungBinh(){
 
     var ketQua = (Number(so1) + Number(so2) + Number(so3) + Number(so4) + Number(so5))/5;
 
-    document.getElementById("kqTrungBinh").innerHTML = "Ket qua la: " + ketQua;
+    document.getElementById("kqTrungBinh").innerHTML = "Kết quả là: " + ketQua;
 }
 
 document.getElementById("tinhTrungBinh").onclick = TinhTrungBinh;
@@ -83,7 +83,7 @@ function TinhTien(){
     var tien = soTienVN * 23500;
     
 
-    document.getElementById("kqTien").innerHTML = "So Tien VN: " + tien.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    document.getElementById("kqTien").innerHTML = "Số Tiền VN: " + tien.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
 }
 
 document.getElementById("tinhTien").onclick = TinhTien;
@@ -115,7 +115,7 @@ function TinhChuViDienTich(){
     var chuVi = (Number(chieuDai) + Number(chieuRong))*2;
     var dienTich = chieuDai * chieuRong;
 
-    document.getElementById("kqChuViDienTich").innerHTML = "<p>Chu Vi: " + chuVi + "</p><p>Dien Tich: " + dienTich + "</p>";
+    document.getElementById("kqChuViDienTich").innerHTML = "<p>Chu Vi: " + chuVi + "</p><p>Diện Tích: " + dienTich + "</p>";
 
 }
 
