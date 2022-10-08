@@ -20,6 +20,13 @@
 
 .ketqua{
     margin-top: 15px;
+    min-height: 30px;
+}
+.ketqua p{
+    margin-bottom: 0px;
+}
+ul{
+    margin-bottom: 0;
 }
 
 .danhsachbaitap{
